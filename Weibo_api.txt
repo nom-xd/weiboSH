@@ -1,0 +1,14 @@
+https://open.weibo.com/wiki/Oauth2/authorize
+https://open.weibo.com/wiki/OAuth2/access_token
+
+name: socialHUb
+
+https://open.weibo.com/wiki/Scope
+SCOPE: all, email, invitation_write, follow_app_official_microblog
+
+import urllib.parse
+safe_string = urllib.parse.quote_plus(SCOPE)
+
+openssl req -x509 -nodes -days 365 -newkey rsa:2048 -sha256 -keyout my_key.cer -out my_cert.cer
+
+https://drive.google.com/uc?export=download&id=1-OdVmdqKnB7qGA1GTMjreuDAe0LKRofd
